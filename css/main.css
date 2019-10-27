@@ -1,43 +1,42 @@
-.left-eye {
-  transform-origin: 100px 82px;
+#left-ear {
+  transform: translate(0, 0);
   transition: all .5s linear;
 }
 
-.right-eye {
-  z-index: 10;
-  bottom: calc(60% - 8px);
+#bear:hover #left-ear {
+  transform: translate(0, -.6em);
+}
 
+#right-ear {
+  transform: translate(0, 0);
   transition: all .5s linear;
 }
 
-.nose {
-  transform-origin: 120px 120px;
-  transition: all .5s linear;
+#bear:hover #right-ear {
+  transform: translate(0, -.6em);
 }
 
-.left-ear {
-  transform-origin: 100px 82px;
-  transition: all .5s linear;
+#left-eye {
+  animation: eye-move 3s ease infinite;
 }
 
-.right-ear {
-  transform-origin: 156px 82px;
-  transition: all .5s linear;
+#right-eye {
+  animation: eye-move 3s ease infinite;
 }
 
-.face {
-  transform-origin: 156px 82px;
-  transition: all .5s linear;
-}
+@keyframes eye-move {
 
-.smiley:hover .left-eyebrow {
-  transform: rotate(100deg);
-}
+  0% {
+    transform: translateX(-.5em);
+  }
 
-.smiley:hover .right-eyebrow {
-  transform: rotate(80deg);
-}
 
-/*Expected IDs: #left-eye, #right-eye, #nose, #left-ear, #right-ear, #face
-Transition times: .5s
-Animation times: 3s
+  50% {
+    transform: translateX(.5em);
+  }
+
+  100% {
+    transform: translateX(-.5em);
+  }
+
+}
