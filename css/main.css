@@ -4,7 +4,9 @@
 }
 
 .right-eye {
-  transform-origin: 156px 82px;
+  z-index: 10;
+  bottom: calc(60% - 8px);
+
   transition: all .5s linear;
 }
 
