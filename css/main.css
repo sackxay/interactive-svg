@@ -1,0 +1,27 @@
+.face {
+  ;
+}
+
+.left-eye {
+  transform: rotate(80deg);
+  transform-origin: 100px 82px;
+  transition: all .5s linear;
+}
+
+.right-eye {
+  transform: rotate(100deg);
+  transform-origin: 156px 82px;
+  transition: all .5s linear;
+}
+
+.smiley:hover .left-eyebrow {
+  transform: rotate(100deg);
+}
+
+.smiley:hover .right-eyebrow {
+  transform: rotate(80deg);
+}
+
+Expected IDs: #left-eye, #right-eye, #nose, #left-ear, #right-ear, #face
+Transition times: .5s
+Animation times: 3s
